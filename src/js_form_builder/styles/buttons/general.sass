@@ -1,0 +1,22 @@
+#{$id}
+	&.#{$cls}button
+		@extend .#{$cls}fc
+		padding: $p
+		font-size: $fs_l
+		border-radius: $brad
+		cursor: pointer
+
+		// config
+		.#{$cls}--has_shadows &
+			box-shadow: 0 4px 6px 0 #60606030, 0 4px 4px 0 #80808015
+
+		// prev
+		&.#{$cls}--prev
+			opacity: $op
+			&:hover
+				opacity: 1
+
+		// disable
+		&.#{$cls}--disable
+			opacity: 1
+			pointer-events: none

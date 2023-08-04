@@ -1,0 +1,20 @@
+// 	border-box
+:deep(*), :deep(::after), :deep(::before)
+	box-sizing: border-box
+
+// table
+:deep(table)
+	caption-side: bottom
+	border-collapse: collapse
+
+// input, button
+:deep(input),
+:deep(button)
+	outline: none
+
+:deep(*::focus-visible)
+	outline: none
+
+// link
+:deep(a)
+	text-decoration: none

@@ -1,0 +1,24 @@
+#{$id}
+	&.#{$cls}widget_button
+		cursor: pointer
+		font-size: $widget_button_font_size
+
+		// text transform
+		.#{$cls}--widget_buttons_transform__lowercase &
+			text-transform: lowercase
+
+		.#{$cls}--widget_buttons_transform__uppercase &
+			text-transform: uppercase
+
+		.#{$cls}--widget_buttons_transform__capitalize &
+			text-transform: capitalize
+
+		// text
+		.#{$cls}--widget_button_direction__reverse &
+			flex-direction: row-reverse
+
+		// hover
+		> *
+			opacity: $op
+		&:hover > *
+			opacity: 1

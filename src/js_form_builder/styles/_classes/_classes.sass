@@ -1,0 +1,33 @@
+.#{$cls}card
+	// vars
+	background-color: $bc
+	color: $fc
+	border-radius: $brad_l
+	padding: calc(3 * $p) calc(2 * $p)
+
+	#{$id}.#{$cls}--shadow &
+		box-shadow: 0 0 12px 0 rgba($fc_rgb, .20), 0 2px 4px 0 rgba($bc_rgb, .10)
+
+.#{$cls}fc
+	display: flex
+	justify-content: center
+	align-items: center
+
+	gap: $p
+
+.#{$cls}fe
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+	gap: $p
+
+.#{$cls}fs
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+	gap: $p
+
+.#{$cls}column
+	flex-direction: column

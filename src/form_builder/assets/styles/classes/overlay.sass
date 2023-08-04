@@ -1,0 +1,51 @@
+@import '@styles/vars'
+
+.overlay_wrapper
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+
+	display: flex
+	justify-content: center
+	align-items: center
+	z-index: 1000003
+
+.overlay
+	$blur: 4px
+	position: absolute
+
+	top: -2 * $blur
+	left: -2 * $blur
+	right: -2 * $blur
+	bottom: -2 * $blur
+
+	background-color: #000
+	opacity: 0.7
+	filter: blur($blur)
+	z-index: 1000002
+
+.modal
+	position: relative
+	z-index: 1000003
+
+	margin-left: auto
+	margin-right: auto
+
+	background-color: #fff
+	border-radius: 15px
+	display: flex
+	justify-content: center
+	align-items: center
+
+	&.--md
+		width: 80%
+	&.--sm
+		width: 60%
+	&.--lg
+		width: 100%
+	&.--full
+		width: 100%
+		padding-left: $base_distance
+		padding-right: $base_distance

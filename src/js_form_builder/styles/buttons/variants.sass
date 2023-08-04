@@ -1,0 +1,30 @@
+#{$id}
+	&.#{$cls}button:not(.#{$cls}--tree_label)
+
+		// fill
+		.#{$cls}--buttons_variant__fill &
+			background-color: $button_next_color
+			color: $bc
+
+			// disable
+			&.#{$cls}--disable
+				background-color: $button_disable_color
+
+			// prev
+			&.#{$cls}--prev
+				background-color: $button_prev_color
+
+		// outline
+		.#{$cls}--buttons_variant__outline &
+			border: 1px solid $button_next_color
+			color: $button_next_color
+
+			// disable
+			&.#{$cls}--disable
+				border-color: $button_disable_color
+				color: $button_disable_color
+
+			// prev
+			&.#{$cls}--prev
+				border-color: $button_prev_color
+				color: $button_prev_color

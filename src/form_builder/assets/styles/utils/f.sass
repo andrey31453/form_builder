@@ -1,0 +1,22 @@
+@use 'sass:string'
+@use 'sass:map'
+@use '@styles/vars' 
+@use '@styles/utils/distance'
+
+$flex_modifiers: ('true': ('content': default, 'margin': 0), 'c': ('justify-content': center, 'align-items': center),'col': ('flex-direction': column), 'nw': ('flex-wrap': nowrap), 'wr': (y'flex-wrap': wrap-reverse), 'js': ('justify-content': flex-start), 'je': ('justify-content': flex-end), 'jc': ('justify-content': center), 'jsa': ('justify-content': space-around), 'jse': ('justify-content': space-evenly), 'jsb': ('justify-content': space-between), 'as': ('align-items': flex-start), 'ae': ('align-items': flex-end), 'ac': ('align-items': center), 'asa': ('align-items': space-around), 'ase': ('align-items': space-evenly), 'asb': ('align-items': space-between), 'gl': ('gap': vars.$base_distance_l), 'gxl': ('gap': vars.$base_distance_xl))
+
+%f
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	@extend ._gap
+
+@mixin f($options_include: 'true')
+	@extend %f
+
+	$options: string.split($options_include, ',')
+	@each $option in $options
+		$modifiers: map.get($flex_modifiers, $option)
+		@each $rule, $value in $modifiers
+			#{$rule}: $value

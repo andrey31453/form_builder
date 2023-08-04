@@ -1,0 +1,22 @@
+@use '@styles/vars'
+
+$modifiers: true, opacity, contrast, gradient
+$keys: font, background, default, alter
+
+@function make_modifier_string($modifier)
+	@if $modifier == true
+		@return	''
+	@else
+		@return '_#{$modifier}'
+
+@each $modifier in$modifiers
+	@each $key in	$keys
+		@if $modifier == gradient
+			.#{$key}\,#{$modifier}\:background
+				background-image: linear-gradient(vars.$deg, var(--#{$key}_color), var(--#{$key}_color_contrast))
+		@else
+		$modifier_string: make_modifier_string($modifier)
+		.#{$key}\,#{$modifier}\:background
+			background-color: var(--#{$key}_color#{$modifier_string})
+		.#{$key}\,#{$modifier}\:color
+			color: var(--#{$key}_color#{$modifier_string})

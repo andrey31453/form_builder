@@ -1,0 +1,37 @@
+@use '@styles/vars' as *
+
+// container
+@each $breakpoint_name_out, $breakpoint_value_out in	$breakpoints
+	.#{$breakpoint_name_out}\:container
+		margin-left: auto
+		margin-right: auto
+
+		width: 100%
+
+		@each $breakpoint_name_in, $breakpoint_value_in in	$breakpoints
+			@if $breakpoint_value_in > $breakpoint_value_out
+				@media (min-width: #{$breakpoint_value_in}px)
+					max-width: #{$breakpoint_value_in}px
+
+// vertical
+$vertical: ('true': $base_distance_l, 'large': $base_distance_xl)
+@each $vertical_key, $vertical_value in	$vertical
+	.#{$vertical_key}\:vertical
+		padding-top: $vertical_value
+		padding-bottom: $vertical_value
+
+// horizontal
+$horizontal: ('false': 0,'true': $base_distance_l, 'large': $base_distance_xl)
+@each $horizontalc_key, $horizontal_value in	$horizontal
+	.#{$horizontalc_key}\:horizontal
+		padding-left: $horizontal_value
+		padding-right: $horizontal_value
+
+// size
+$size: ('sm': 70%,'md': 85%, 'lg': 100%, 'full': 100% )
+@each $size_key, $size_value in	$size
+	.#{$size_key}\:size
+		margin-left: auto
+		margin-right: auto
+
+		width: $size_value

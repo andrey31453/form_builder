@@ -1,0 +1,73 @@
+//
+// consts
+//
+
+$breakpoints: ('true': 0, 'sm': 576, 'md': 768, 'lg': 992, 'xl': 1200, 'xxl': 1400, 'fluid': 99999)
+
+$z: 1000000
+$time: 180ms
+
+//
+// colors
+//
+
+$fc: var(--font_color)
+$fco: var(--font_color_opacity)
+$fcg: var(--font_color_contrast)
+
+$bc: var(--background_color)
+$bco: var(--background_color_opacity)
+$bcg: var(--background_color_contrast)
+
+$dc: var(--default_color)
+$dco: var(--default_color_opacity)
+$dcg: var(--default_color_contrast)
+
+$ac: var(--alter_color)
+$aco: var(--alter_color_opacity)
+$acg: var(--alter_color_contrast)
+
+$deg: var(--contrast_deg)
+$op: var(--base_opacity)
+
+// button colors
+$button_next_color: var(--button_next_color)
+$button_disable_color: var(--button_disable_color)
+$button_prev_color: var(--button_prev_color)
+
+//
+// sizes
+//
+
+$base_distance: var(--base_distance)
+$fs: var(--font_size)
+$brad: var(--base_border_radius)
+$scroll_border_width: var(--scroll_border_width)
+
+$widget_width: var(--widget_width)
+$widget_button_font_size: var(--widget_button_font_size)
+$widget_button_icon_size: var(--widget_button_icon_size)
+
+// label size
+
+$label_size: var(--label_size)
+$input_size: var(--input_size)
+
+//	
+// computed
+// 
+
+$op_difference: calc(0.5 * (1 - var(--base_opacity)))
+$ops: calc($op + $op_difference)
+$opl: calc($op - $op_difference)
+
+$fs_s: calc(0.85 * var(--font_size))
+$fs_l: calc(1.35 * var(--font_size))
+$brad_l: calc(1.75 * var(--base_border_radius))
+$brad_xl: calc(3.5 * var(--base_border_radius))
+
+$input_and_label_size: calc(var(--label_size) + var(--input_size))
+$base_distance_l: calc(1.75 * var(--base_distance))
+$-base_distance_l: calc(-1.75 * var(--base_distance))
+$base_distance_xl: calc(3.5 * var(--base_distance))
+$-base_distance_xl: calc(-3.5 * var(--base_distance))

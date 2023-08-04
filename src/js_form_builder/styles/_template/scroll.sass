@@ -1,0 +1,21 @@
+
+#{$id}.#{$cls}widget *
+	scrollbar-color: $fc_op none
+	scrollbar-width: $scroll_border_width
+
+	// фон скроллбара
+	::-webkit-scrollbar
+		width: $scroll_border_width
+
+	// btn-s
+	::-webkit-scrollbar-button
+		display: none
+
+	// пустое пространство под индикатором прокрутки
+	::-webkit-scrollbar-track
+		background: none
+
+	// индикатор прокрутки
+	::-webkit-scrollbar-thumb
+		background: $fc_op
+		border-radius: $brad

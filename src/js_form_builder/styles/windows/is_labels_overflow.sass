@@ -1,0 +1,16 @@
+#{$id}
+	&.#{$cls}window
+		.#{$cls}--has_labels.#{$cls}--has_labels_overflow &
+			grid-template-columns: repeat($input_and_label_size, 1fr)
+
+			.#{$cls}label
+				grid-column: span $label_size
+
+			.#{$cls}input
+				grid-column: span $input_size
+
+			.#{$cls}errors
+				grid-column: span $input_and_label_size
+
+			.#{$cls}button_container
+				grid-column: span $input_and_label_size

@@ -1,0 +1,90 @@
+#{$id}
+	&.#{$cls}widget_form_wrapper
+		position: fixed
+
+		width: $widget_width
+		max-width: 80%
+		max-height: calc(100% - 2 * $p)
+
+		//
+		// widget_button_close_position
+		//  
+
+		display: flex
+		justify-content: flex-start
+
+		gap: $p
+
+		.#{$cls}--widget_button_close_position__left &
+			align-items: flex-start
+			flex-direction: row
+
+		.#{$cls}--widget_button_close_position__right &
+			align-items: flex-start
+			flex-direction: row-reverse
+
+		.#{$cls}--widget_button_close_position__top &
+			align-items: flex-end
+			flex-direction: column
+
+		.#{$cls}--widget_button_close_position__bottom &
+			align-items: flex-end
+			flex-direction: column-reverse
+
+		//
+		// standart
+		//
+
+		.#{$cls}--open_template__standart &
+
+			// top bottom
+			.#{$cls}--widget_side__top &
+				top: $p
+			.#{$cls}--widget_side__bottom &
+				bottom: $p
+
+			.#{$cls}--widget_position__left &
+				left: 20%
+			.#{$cls}--widget_position__center &
+				left: 50%
+				transform: translate3D(-50%, 0, 0)
+			.#{$cls}--widget_position__right &
+				right: 20%
+
+			// left right
+			.#{$cls}--widget_side__right &
+				right: $p
+			.#{$cls}--widget_side__left &
+				left: $p
+
+			.#{$cls}--widget_position__top &
+				top: 20%
+			.#{$cls}--widget_position__middle &
+				top: 50%
+				transform: translate3D(0, -50%, 0)
+			.#{$cls}--widget_position__bottom &
+				bottom: 20%
+
+		//
+		// modal
+		//
+
+		.#{$cls}--open_template__modal &
+			top: 50%
+			left: 50%
+			transform: translate3D(-50%, -50%, 0)
+
+		//
+		// sidebar
+		//
+
+		.#{$cls}--open_template__sidebar &
+			top: $p
+			bottom: $p
+			.#{$cls}--widget_side__left &
+				left: $p
+			.#{$cls}--widget_side__right &
+				right: $p
+
+			.#{$cls}widget_form
+				height: 100%

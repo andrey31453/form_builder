@@ -1,0 +1,22 @@
+#{$id}
+	&.#{$cls}window
+		width: 100%
+
+		display: grid
+		column-gap: $p
+		row-gap: $p
+
+		//
+		// general
+		//
+
+		grid-template-columns: repeat(1, 1fr)
+
+		.#{$cls}input
+			grid-column: span 1
+
+		.#{$cls}errors
+			grid-column: span 1
+
+		.#{$cls}button_container
+			grid-column: span 1

@@ -1,0 +1,9 @@
+@use '@styles/vars'
+
+$overflows: ('true': ('overflow': scroll, 'max-height': calc(100vh - 2 * vars.$base_distance), 'max-width': calc(100vw - 2 * vars.$base_distance)), 'x': ('overflow-x': scroll, 'max-width': calc(100vw - 2 * vars.$base_distance)),'y': ('overflow-y': scroll, 'max-height': calc(100vh - 2 * vars.$base_distance)))
+
+@mixin overflow($overflow_props: 'true')
+	@each $overflow_key, $overflow_value in $overflows
+		@if $overflow_key == $overflow_props
+			@each $rule_key, $rule_value in $overflow_value
+				#{$rule_key}: $rule_value

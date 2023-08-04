@@ -1,0 +1,102 @@
+{
+  "config": {
+    "api": "https://app.future-it-pro.ru",
+    "embed": {
+      "type": "button",
+      "id": "#call_widget_button1"
+    },
+    "forms": [
+      [
+        {
+          "component": "doctor_times"
+        },
+        {
+          "id": 0,
+          "name": "Имя",
+          "type": "text",
+          "component": "input"
+        },
+        {
+          "id": 0,
+          "name": "Телефон",
+          "type": "tel",
+          "component": "input"
+        }
+      ]
+    ],
+    "modifiers": {
+      "buttons_variant": "fill",
+      "errors_transform": "standart",
+      "labels": false,
+      "labels_overflow": true,
+      "labels_transform": "standart",
+      "mode": "standart",
+      "open_template": "standart",
+      "placeholders": true,
+      "placeholders_transform": "standart",
+      "shadows": true,
+      "tree_labels_transform": "standart",
+      "widget_button_close_position": "top",
+      "widget_button_direction": "normal",
+      "widget_button_position": "50%",
+      "widget_button_side": "right",
+      "widget_buttons_transform": "standart",
+      "widget_position": "50%",
+      "widget_side": "right"
+    },
+
+    "vars": {
+      "background_color": "#ffffff",
+      "background_color_contrast": "#cecece",
+      "background_color_opacity": "#cecece20",
+
+      "font_color": "#424242",
+      "font_color_contrast": "#666666",
+      "font_color_opacity": "#66666620",
+
+      "default_color": "#339999",
+      "default_color_contrast": "#336666",
+      "default_color_opacity": "#33666620",
+
+      "alter_color": "#ff6a71",
+      "alter_color_contrast": "#9e9aaa",
+      "alter_color_opacity": "#9e9aaa20",
+
+      "contrast_deg": "30deg",
+      "base_opacity": 0.7,
+
+      "font_size": "18px",
+      "base_distance": "8px",
+      "base_border_radius": "4px",
+      "scroll_border_width": "4px",
+      "label_size": 2,
+      "input_size": 5,
+
+      "widget_width": "350px",
+      "widget_button_icon_size": "30px",
+      "widget_button_font_size": "22px"
+    },
+    "scrypts": { "open_method": "close" },
+    "template": {
+      "is": "teeths",
+      "options": {
+        "1": 11111,
+        "2": 11121
+      }
+    },
+    "special": {
+      "no_style": false,
+      "widget_ids": null,
+      "widget__classes": null,
+      "widget__active_classes": null,
+      "submit_ids": null,
+      "submit__classes": null
+    },
+    "views": {
+      "widget_button_open_text": "",
+      "widget_button_open_icon": "MessageSquareIcon",
+      "widget_button_close_text": "",
+      "widget_button_close_icon": "XIcon"
+    }
+  }
+}

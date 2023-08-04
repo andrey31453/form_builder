@@ -1,0 +1,16 @@
+#{$id}
+	&.#{$cls}widget_button.#{$cls}--open
+		@extend .#{$cls}card
+		@extend .#{$cls}fc
+
+		padding: $p
+		width: fit-content
+
+		.#{$cls}--widget_side__top,
+		.#{$cls}--widget_side__bottom
+			margin: 0 auto
+
+		// svg
+		svg
+			height: $widget_button_icon_size
+			width: $widget_button_icon_size

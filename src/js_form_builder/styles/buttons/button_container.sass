@@ -1,0 +1,10 @@
+#{$id}
+	&.#{$cls}button_container
+		display: grid
+		grid-template-columns: 1fr 1fr
+		gap: $p
+		padding-top: $p
+
+		// single_button
+		&.#{$cls}--single_button > *
+			grid-column-start: 2

@@ -1,0 +1,20 @@
+#{$id}
+	&.#{$cls}input
+		outline: none
+		font-size: $fs_l
+		padding: $p
+		border-radius: $brad
+		border: 1px solid $fc_op
+		background-color: $bc_op
+		color: $fc
+
+	// text transform
+	&.#{$cls}input::placeholder
+		.#{$cls}--placeholders_transform__lowercase &
+			text-transform: lowercase
+
+		.#{$cls}--placeholders_transform__uppercase &
+			text-transform: uppercase
+
+		.#{$cls}--placeholders_transform__capitalize &
+			text-transform: capitalize

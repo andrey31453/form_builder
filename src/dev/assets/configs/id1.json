@@ -1,0 +1,100 @@
+{
+  "config": {
+    "api": "https://app.future-it-pro.ru",
+    "embed": {
+      "type": "id",
+      "id": "#id1"
+    },
+    "modifiers": {
+      "buttons_variant": "fill",
+      "errors_transform": "standart",
+      "labels": false,
+      "labels_overflow": true,
+      "labels_transform": "standart",
+      "mode": "standart",
+      "open_template": "standart",
+      "placeholders": true,
+      "placeholders_transform": "standart",
+      "shadows": true,
+      "tree_labels_transform": "standart",
+      "widget_button_close_position": "top",
+      "widget_button_direction": "normal",
+      "widget_button_position": "50%",
+      "widget_button_side": "right",
+      "widget_buttons_transform": "standart",
+      "widget_position": "50%",
+      "widget_side": "right"
+    },
+
+    "vars": {
+      "background_color": "#ffffff",
+      "background_color_contrast": "#cecece",
+      "background_color_opacity": "#cecece20",
+
+      "font_color": "#424242",
+      "font_color_contrast": "#666666",
+      "font_color_opacity": "#66666620",
+
+      "default_color": "#339999",
+      "default_color_contrast": "#336666",
+      "default_color_opacity": "#33666620",
+
+      "alter_color": "#ff6a71",
+      "alter_color_contrast": "#9e9aaa",
+      "alter_color_opacity": "#9e9aaa20",
+
+      "contrast_deg": "30deg",
+      "base_opacity": 0.7,
+
+      "font_size": "18px",
+      "base_distance": "8px",
+      "base_border_radius": "4px",
+      "scroll_border_width": "4px",
+      "label_size": 2,
+      "input_size": 5,
+
+      "widget_width": "350px",
+      "widget_button_icon_size": "30px",
+      "widget_button_font_size": "22px"
+    },
+    "scrypts": { "open_method": "close" },
+    "template": {
+      "is": "teeths",
+      "options": {
+        "title": "title id1"
+      }
+    },
+    "special": {
+      "no_style": false,
+      "widget_ids": "#",
+      "widget__classes": ".",
+      "widget__active_classes": ".",
+      "submit_ids": "#",
+      "submit__classes": "."
+    },
+    "views": {
+      "tree_labels": [
+        "Заголовок первой группы значений 1",
+        "Заголовок второй группы значений 1"
+      ]
+    },
+    "forms": [
+      [
+        {
+          "id": 3,
+          "name": "Имя",
+          "type": "text",
+          "required": false,
+          "component": "input"
+        },
+        {
+          "id": 4,
+          "name": "Телефон",
+          "type": "tel",
+          "required": true,
+          "component": "input"
+        }
+      ]
+    ]
+  }
+}

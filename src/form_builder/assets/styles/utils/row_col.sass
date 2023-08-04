@@ -1,0 +1,22 @@
+@use '@styles/vars' as *
+
+.row
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: auto
+	gap: $base_distance_xl
+
+$cols_quantity: 12
+
+.col
+	grid-column: span $cols_quantity
+
+@each $breakpoint_name, $breakpoint_value in	$breakpoints
+	@for $col_current from 0 through $cols_quantity
+		@media (min-width: #{$breakpoint_value}px)
+			.#{$breakpoint_name}\:col_#{$col_current}
+				@if ($col_current == 0)
+					display: none
+				@else
+					display: inherit
+					grid-column: span $col_current

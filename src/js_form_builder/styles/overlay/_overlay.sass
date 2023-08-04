@@ -1,0 +1,22 @@
+#{$id}.#{$cls}overlay
+	// active
+	position: fixed
+
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+	opacity: $opl
+	background-color: $fc
+	backdrop-filter: blur(4px)
+
+	// active
+	left: 100%
+	opacity: 0
+	// TODO add transition
+
+	// not active
+	.#{$cls}--active &
+		left: 0
+		opacity: $opl

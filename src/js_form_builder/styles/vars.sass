@@ -1,0 +1,67 @@
+
+//
+//  prop
+//
+
+// $unic_data_name не должно изменяться
+$unic_data_name: 'future_it_dent_widget'
+
+//
+//  cuts
+//
+
+$id: [data-#{$unic_data_name}]
+$cls: #{$unic_data_name}__
+
+//
+// colors
+//
+
+$bc: var(--#{$unic_data_name}__background_color)
+$fc: var(--#{$unic_data_name}__font_color)
+
+// js computed
+$fc_op: var(--#{$unic_data_name}__font_color_opacity)
+$bc_op: var(--#{$unic_data_name}__background_color_opacity)
+
+$fc_rgb: var(--#{$unic_data_name}__font_color_rgb)
+$bc_rgb: var(--#{$unic_data_name}__background_color_rgb)
+
+// button colors
+$button_next_color: var(--#{$unic_data_name}__button_next_color)
+$button_disable_color: var(--#{$unic_data_name}__button_disable_color)
+$button_prev_color: var(--#{$unic_data_name}__button_prev_color)
+
+//
+// sizes
+//
+
+$fs: var(--#{$unic_data_name}__font_size)
+
+$brad: var(--#{$unic_data_name}__base_border_radius)
+$brad_l: calc(2.25 * var(--#{$unic_data_name}__base_border_radius))
+$scroll_border_width: var(--#{$unic_data_name}__scroll_border_width)
+$p: var(--#{$unic_data_name}__base_distance)
+// computed
+$pl: calc(2.5 * var(--#{$unic_data_name}__base_distance))
+
+$widget_width: var(--#{$unic_data_name}__widget_width)
+$widget_button_font_size: var(--#{$unic_data_name}__widget_button_font_size)
+$widget_button_icon_size: var(--#{$unic_data_name}__widget_button_icon_size)
+
+// label size
+$label_size: var(--#{$unic_data_name}__label_size)
+$input_size: var(--#{$unic_data_name}__input_size)
+// computed
+$input_and_label_size: calc(var(--#{$unic_data_name}__label_size) + var(--#{$unic_data_name}__input_size))
+
+// local vars
+$op: var(--#{$unic_data_name}__base_opacity)
+// computed
+$op_difference: calc(0.5 * (1 - var(--#{$unic_data_name}__base_opacity)))
+$ops: calc($op + $op_difference)
+$opl: calc($op - $op_difference)
+
+$fs_s: 0.9rem
+$fs_l: 1.2rem
+$z: 1000000

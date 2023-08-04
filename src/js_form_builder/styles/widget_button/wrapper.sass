@@ -1,0 +1,46 @@
+#{$id}
+	&.#{$cls}widget_button_wrapper
+		position: fixed
+		border-radius: $brad_l
+
+		//
+		// top bottom
+		//
+
+		.#{$cls}--widget_button_side__top &
+			top: $p
+			bottom: none
+		.#{$cls}--widget_button_side__bottom &
+			top: none
+			bottom: $p
+
+		.#{$cls}--widget_button_position__center &
+			left: 50%
+			right: none
+		.#{$cls}--widget_button_position__left &
+			left: 20%
+			right: none
+		.#{$cls}--widget_button_position__right &
+			right: 20%
+			right: none
+
+		//
+		// left right
+		//
+
+		.#{$cls}--widget_button_side__right &
+			right: $p
+		.#{$cls}--widget_button_side__left &
+			left: $p
+
+		.#{$cls}--widget_button_position__top &
+			top: 20%
+		.#{$cls}--widget_button_position__middle &
+			top: 50%
+			transform: translate3D(0, -50%, 0)
+		.#{$cls}--widget_button_position__bottom &
+			bottom: 20%
+
+		// has_shadows
+		.#{$cls}--has_shadows &
+			box-shadow: 0 0 20px 0 rgba(0,0,0,.4)

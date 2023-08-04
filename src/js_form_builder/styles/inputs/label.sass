@@ -1,0 +1,35 @@
+#{$id}
+	&.#{$cls}label
+		@extend .#{$cls}fs
+		opacity: $ops
+
+		// text transform
+		.#{$cls}--labels_transform__lowercase &
+			text-transform: lowercase
+
+		.#{$cls}--labels_transform__uppercase &
+			text-transform: uppercase
+
+		.#{$cls}--labels_transform__capitalize &
+			text-transform: capitalize
+
+		// has_labels_overflow
+		.#{$cls}--has_labels_overflow &
+			position: relative
+
+			overflow: hidden
+			white-space: nowrap
+			&::after
+				position: absolute
+				content: ''
+
+				right: 0
+				top: 0
+				bottom: 0
+				width: $pl
+
+				background-image: linear-gradient(90deg, rgba($bc_rgb, 0), rgba($bc_rgb, 1))
+
+		// not_labels
+		.#{$cls}--not_labels &
+			display: none
